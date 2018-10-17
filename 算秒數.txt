@@ -1,0 +1,29 @@
+maxcount=1;
+tic;
+for ii=1:maxcount
+  clear square
+  for ii=1:10000;
+    square(ii)=ii^2;
+  endfor
+endfor
+average1=(toc)/maxcount
+
+maxcount=10;
+tic;
+for ii=1:maxcount
+  clear square
+  square=zeros(1,10000);
+  for ii=1:10000;
+    square(ii)=ii^2;
+  endfor
+endfor
+average3=(toc)/maxcount
+
+maxcount=1;
+tic;
+for ii=1:maxcount
+  clear square
+   ii=1:10000;
+   square=ii.^2;
+endfor
+average4=(toc)/maxcount
