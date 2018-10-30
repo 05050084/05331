@@ -1,0 +1,7 @@
+function result=area_or_volume(radius,height)
+msg=nargchk(1,2,nargin);
+error(msg);
+if nargin==1
+    height=1;
+end;
+result = pi*radius^2*height;
