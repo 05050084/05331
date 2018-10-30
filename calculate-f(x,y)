@@ -1,0 +1,16 @@
+clear all;
+close all;
+ 
+x=input('Enter x:');
+y=input('Enter y:');
+ 
+if x>=0 && y>=0
+    fun = x+y;
+elseif x>=0 && y>0
+    fun = x+y^2;
+elseif x<=0 && y>=0
+    fun = x^2+y;
+else
+    fun = x^2+ y^2;
+end;
+disp(['f(x,y)=' num2str(fun)]);
