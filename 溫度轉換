@@ -1,0 +1,7 @@
+clear all;
+close all;
+ 
+temp_f = input('Enter the temp_f:');
+temp_k = (5/9)*(temp_f-32)+273.15;
+str=['temp_k=' num2str(temp_k)];
+disp(str);
