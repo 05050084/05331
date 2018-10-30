@@ -1,0 +1,10 @@
+% V=120V Rl=1~100 Rs=50
+close all;
+clear all;
+ 
+Rs=50;
+V=120;
+Rl=1:1:100;
+I=V./(Rs+Rl);
+P=(I.^2).*Rl;
+plot(Rl,P);
