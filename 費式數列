@@ -1,0 +1,10 @@
+close all;
+clear all;
+ 
+n=input('enter n(n>2):');
+i=3,fn(1)=1,fn(2)=2;
+while i<=n
+      fn(i)=fn(i-1)+fn(i-2);
+      i=i+1;
+end;
+disp(['fn=',int2str(fn(n))]);
