@@ -1,0 +1,21 @@
+close all;
+clear all;
+ 
+i=sqrt(-1); 
+t=0:0.01:4;
+f=(1+0.25*i)*t-2.0;
+amp=abs(f);
+pha=angle(f);
+ 
+subplot(2,1,1);
+plot(f,amp);
+title('Amplitude');
+xlabel('time');
+ylabel('Output');
+ 
+ 
+subplot(2,1,2);
+plot(f,pha);
+title('phase');
+xlabel('time');
+ylabel('Output');
