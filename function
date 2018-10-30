@@ -1,0 +1,8 @@
+function [r,theta]=rect2polar(x,y)           
+function [x,y]=polar2rect(r,theta)
+r=sqrt(x.^2+y.^2);
+x=r*cos(theta*pi/180);
+theta=180/pi*atan2(y,x);                       
+y=r*sin(theta*pi/180);
+%檔名需存成 rect2polar                            
+ %檔名需存成 polar2rect
