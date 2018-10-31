@@ -1,0 +1,25 @@
+close all;
+clear all;
+Io=2e-6;
+q=1.602e-19;
+k=1.38e-23;
+vD=-1:0.01:0.6;
+T=input('T=');
+ 
+iD=Io*(exp((q*vD)/(k*T))-1);
+plot(vD,iD);
+hold on
+T=input('T=');
+ 
+iD=Io*(exp((q*vD)/(k*T))-1);
+plot(vD,iD,'r');
+hold on
+T=input('T=');
+ 
+iD=Io*(exp((q*vD)/(k*T))-1);
+plot(vD,iD,'k-');
+hold off
+figure
+subplot(1,3,1),plot(vD,iD,'r');
+subplot(1,3,2),plot(vD,iD,'b');
+subplot(1,3,3),plot(vD,iD,'g');
