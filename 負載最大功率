@@ -1,0 +1,9 @@
+function pl=findpl(rl);
+for j=0:rl
+j=j+1
+rs=50;
+v=120;
+i=v/(rs+j);
+pl=(i^2)*j
+end
+end
